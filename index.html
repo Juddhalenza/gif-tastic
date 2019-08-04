@@ -1,14 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./assests/css/styles.css">
-    <script type="text/javascript" src="./assests/javascript/javascript.js"></script>
-    <title>gif-tastic</title>
+	<meta charset="utf-8">
+	<title>Kung Fu Collection</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+
 </head>
 <body>
-<div>heelo world</div>
+
+	<div class="container"><br>
+
+		<header class="jumbotron">
+			<h1>Fast Cars</h1>
+		</header>
+
+
+		<!-- Rendered buttons will get dumped Here  -->
+		<div id="buttons-view"></div><br>
+
+		<!-- Submit movie form -->
+		<form class="navbar-form navbar-right" id="movie-form">
+			<div class="form-group">
+				<label for="movie-input"><h3>Add a type of fast car</h3></label>
+			</div>
+			<input type="text" id="movie-input"><br>
+
+			<!-- Button triggers new movie to be added -->
+			<input id="add-car" button type="submit" class="btn btn-deafult" value="Submit">
+		</form>
+
+		<!-- Gifs will get dumped dere -->
+		<div id="movies-view" data-state="still"></div>
+
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+
+	
 </body>
 </html>
